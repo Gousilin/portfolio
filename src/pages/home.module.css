@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    background: linear-gradient(0.11deg, #37F3D1 1.74%, #9E26E7 69.54%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.bd-home {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Área da barra de navegação*/
+
+.header-home{
+    background-color: #9E26E7;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+}
+
+.header-home li{
+    list-style: none;
+    display: inline;
+    margin-left: 10rem;
+}
+
+.header-home a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-home li:first-child{
+    margin-left: 0;
+}
+
+.header-home a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.header-home a:active{
+    color: black;
+}
+
+/*Área da Home*/
+
+.main-home{
+    display: block;
+    flex-direction: column;
+}
+
+.home-section{
+    margin-top: 3vh;
+    min-height: 85vh;
+}
+
+.rectangle-container {
+    display: flex;
+    justify-content: center;
+}
+  
+.rectangle1 {
+    border: 0.1em solid #ffff;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 5vh;
+    height: 70vh;
+    width: 85vw;
+    z-index: 2;
+}
+  
+.rectangle2 {
+    border: 0.1em solid #ffff;
+    border-radius: 30px;
+    position: absolute;
+    height: 80vh;
+    width: 80vw;
+}
+
+.text-home{
+    width: 60%;
+    height: 100%;
+    padding-left: 4vw;
+    margin-left: 2.5vw;
+}
+
+.rectangle1 h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffff;
+    font-size: 5rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.rectangle1 h5{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #ffff;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    margin-top: 0;
+    margin-bottom: 10vh;
+}
+
+.img-profile{
+    margin-left: 46vw;
+    margin-top: 8.25vh;
+    position: absolute;
+    height: 72vh;
+    border-radius: 20px;
+    z-index: 4;
+}
+
+.button-home{
+    border-radius: 12px;
+    background-color: #9E26E7; 
+    color:  #92E0D2;
+    height: 8vh;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-home a{
+    text-decoration: none;
+    color:  #92E0D2;
+}
+
+.button-home:hover{
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*Área da apresentação pessoal*/
+
+.pre-section{
+    padding-top: 1.5vh;
+    min-height: 85vh;
+}
+
+.pre-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.pre-section h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffff;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    margin-bottom: 0;
+    margin-top: 2vh;
+}
+
+.container-pre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 8vw;
+    color: #ffff;
+    font-weight: 300;
+    font-size: 1.05rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    background-color: #1e1e1e4b;
+}
+
+.span-pre{
+    display: block;
+    margin-bottom: 1vh;
+}
+
+.img-pre{
+    height: 50vh;
+    margin-right: 10vh;
+}
+
+
+
+/*Área dos projetos*/
+
+.projects-section{
+    padding-top: 1.5vh;
+    min-height: 85vh;
+}
+
+.projects-section h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffff;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    margin-bottom: 0;
+    margin-top: 4vh;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.proj-box{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    height: 25vh;
+    width: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.proj-box:hover{
+    cursor: pointer;
+    background-color: #92E0D2;
+    transform: scale(1.1);
+}
+
+
+.img-proj{
+    height: 15vh;
+}
+
+.box-1{
+    background-color: #92E0D2;
+}
+
+/*Caderno Currículo*/
+
+.curriculum-section{
+    padding-top: 1.5vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-es{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page1, .page2{
+    border: 3px solid #1E1E1E;
+    height: 100vh;
+    width: 40vw;
+    border-radius: 12px;
+    background-color: #ffffff50;
+}
+
+.spiral{
+    height: 100vh;
+    width: 1.8vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.spiral-element{
+    border-radius: 12px;
+    height: 1.6vh;
+    background-color: #1E1E1E;
+    margin: 1.2vh 0;
+}
+
+.spiral-element:first-child{
+    margin-top: 3vh;
+}
+
+.tag-box1{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+
+.tag1{
+    margin-top: 2vh;
+    background-color: transparent;
+    border: 4vh solid #1E1E1E;
+    border-left: 30vh solid #1E1E1E;
+    border-right: 4vh solid transparent;
+    width: 0;
+    height: 0;
+    position: relative;
+}
+
+.tag-title1{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffff;
+    font-size: 1.6rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    margin-top: 3vh;
+    margin-left: 2vw;
+}
+
+.tag-box2{
+    width: auto;
+    height: auto;
+    display: flex;
+    float: right;
+    justify-content: end;
+}
+
+
+.tag2{
+    margin-top: 2vh;
+    background-color: transparent;
+    border: 4vh solid #1E1E1E;
+    border-right: 30vh solid #1E1E1E;
+    border-left: 4vh solid transparent;
+    width: 0;
+    height: 0;
+    position: relative;
+
+}
+
+.tag-title2{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffff;
+    font-size: 1.6rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+    margin-top: 3vh;
+    margin-right: 2vw;
+
+}
+
+.img-container{
+    margin-top: 8vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.img-down{
+    margin-right: 2.5vw;
+    height: 4vh;
+    animation: pulsar 1s infinite;
+    padding: 1vh;
+}
+
+@keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.img-down:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    animation: none;
+    background-color: rgba(255, 255, 255, 0.514);
+    border: none;
+    border-radius: 50%;
+
+}
+
+
+.page1 .box-p, .page2 .box-p{
+    margin: 0 1.8vw;
+}
+
+.page1 .box-p span, .page2 .box-p span{
+    font-size: 1rem;
+}
+
+.page1 .box-p span::before , .page2 .box-p span::before {
+    content: '';
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.8vw;
+  }
+
+.page1 .box-p h4, .page2 .box-p h4{
+    font-size: 1.1rem;
+    margin: 3vh 1vw;
+}
+
+.page1 .box-p h5, .page2 .box-p h5{
+    font-size: 1rem;
+    margin: 1vh 2vw;
+}
+
+.page2 .box-p h5:first-child{
+    margin: 10vh 0 0 2vw;
+}
+
+span{
+    display: block;
+    margin: 0 2vw;
+}
+
+/*Footer*/
+
+.footer-home{
+    height: 30vh;
+    padding-top: 10vh;
+}
+
+.footer-links{
+    width: 35vw;
+    margin: 0 32.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-footer{
+    height: 10vh;
+}
+
+.img-footer:last-child{
+    border-radius: 8px;
+}
+
+.img-footer:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.footer-by{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-by h5{
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-by h5:first-child{
+    margin: 8vh 0 0 0;
+}
