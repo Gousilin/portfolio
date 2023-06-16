@@ -15,28 +15,28 @@ import linkedinIcon from '../img/linkedin-img.png'
 import myCV from '../cv/Gousilin-Silva-CV.pdf'
 
 import { Link } from 'react-scroll';
+import { TypeAnimation } from 'react-type-animation';
 
 <a href="https://www.flaticon.com/free-icons/file" title="file icons">File icons created by Freepik - Flaticon</a>
 
 const recipientEmail = 'gousilinleandra@gmail.com';
 
-    const openGmail = () => {
-        const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}`;
-        window.open(gmailUrl, '_blank');
-    };
+const openGmail = () => {
+    const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}`;
+    window.open(gmailUrl, '_blank');
+};
 
+const handleDownload = () => {
+    const downloadUrl = myCV; 
 
-    const handleDownload = () => {
-        const downloadUrl = myCV; 
-  
-        const link = document.createElement('a');
-        link.href = downloadUrl;
-        link.download = 'Gousilin-Silva-CV.pdf';
-  
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = 'Gousilin-Silva-CV.pdf';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
 
 
 const Home = () => {
@@ -73,10 +73,21 @@ const Home = () => {
                 
                 <div className={styles['container-pre']}>
                     <img src={girlCoding} alt="Girl Developer" className={styles['img-pre']}/>
-                    <p><span className={styles['span-pre']}>Prazer! Me chamo Gousilin, tenho 23 anos e sou formada em Ciências Biomédicas com o título de Mestre pelo Programa de Pós-graduação em Biologia Geral e Aplicada. Estranho, não é?</span>
+                    <TypeAnimation
+                        sequence={[
+                            'Prazer! Me chamo Gousilin, tenho 23 anos e sou formada em Ciências Biomédicas com o título de Mestre pelo Programa de Pós-graduação em Biologia Geral e Aplicada. Estranho, não é? \n Durante a pandemia, no meio do meu programa de mestrado, tive a oportunidade de realizar cursos introdutórios à programação e assim me envolvi (e me apaixonei) com a área da tecnologia. \n Atualmente estou cursando Análise e Desenvolvimento de Sistemas enquanto desenvolvo minhas habilidades como programadora front-end para poder fazer a transição entre carreiras. \n Aprender é meu maior objetivo em vida, pois sei que assim posso evoluir. Sou uma pessoa resiliente e capaz de lidar com múltiplas tarefas em um mesmo período. Adoro trabalhar em equipe e acredito que esse tipo de ambiente favorece o aprendizado.',
+                            1000
+                          ]}
+                          wrapper="span"
+                          speed={1000}
+                          style={{ fontSize: '1em', whiteSpace: 'pre-line', display: 'block'}}
+                          repeat={false}
+                    
+                    />
+                    {/*<p className='typing-text' id='present'><span className={styles['span-pre']}>Prazer! Me chamo Gousilin, tenho 23 anos e sou formada em Ciências Biomédicas com o título de Mestre pelo Programa de Pós-graduação em Biologia Geral e Aplicada. Estranho, não é?</span>
                     <span className={styles['span-pre']}>Durante a pandemia, no meio do meu programa de mestrado, tive a oportunidade de realizar cursos introdutórios à programação e assim me envolvi (e me apaixonei) com a área da tecnologia.</span>
                     <span className={styles['span-pre']}>Atualmente estou cursando Análise e Desenvolvimento de Sistemas enquanto desenvolvo minhas habilidades como programadora front-end para poder fazer a transição entre carreiras.</span>
-                    <span className={styles['span-pre']}>Aprender é meu maior objetivo em vida, pois sei que assim posso evoluir. Sou uma pessoa resiliente e capaz de lidar com múltiplas tarefas em um mesmo período. Adoro trabalhar em equipe e acredito que esse tipo de ambiente favorece o aprendizado.</span></p> 
+                        <span className={styles['span-pre']}>Aprender é meu maior objetivo em vida, pois sei que assim posso evoluir. Sou uma pessoa resiliente e capaz de lidar com múltiplas tarefas em um mesmo período. Adoro trabalhar em equipe e acredito que esse tipo de ambiente favorece o aprendizado.</span></p> */}
                 </div>
                       
             </div>

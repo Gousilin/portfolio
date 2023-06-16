@@ -183,7 +183,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1vh 8vw;
+    padding: 5vh 8vw;
     color: #ffff;
     font-weight: 300;
     font-size: 1.05rem;
@@ -200,8 +200,6 @@ body{
     height: 50vh;
     margin-right: 10vh;
 }
-
-
 
 /*Área dos projetos*/
 
@@ -250,6 +248,7 @@ body{
     cursor: pointer;
     background-color: #92E0D2;
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
 
@@ -340,9 +339,8 @@ body{
     height: auto;
     display: flex;
     float: right;
-    justify-content: end;
+    justify-content: flex-end;
 }
-
 
 .tag2{
     margin-top: 2vh;
@@ -372,8 +370,8 @@ body{
 .img-container{
     margin-top: 8vh;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .img-down{
