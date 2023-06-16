@@ -88,16 +88,16 @@ const Home = () => {
                 <div className={styles['projects']}>
                     <div className={styles['projects-boxes']}>
                         <div className={styles['proj-box']}>
-                            <img src={calculatorImg} alt="Calculator Icon" className={styles['img-proj']}/>
+                        <a href="https://projeto-calculadora.bohr.io/" target="_blank"><img src={calculatorImg} alt="Calculator Icon" className={styles['img-proj']}/></a>
                         </div>
-                        <div className={styles['proj-box']}>
-                            <img src={recepieBook} alt="Recepie Book Icon" className={styles['img-proj']}/>
-                        </div>
-                        <div className={styles['proj-box']}>
+                        <a href="https://clone-spotify.bohr.io/" target="_blank"><div className={styles['proj-box']}>
                             <img src={spotifyProj} alt="Spotify Icon" className={styles['img-proj']}/>
+                        </div></a>
+                        <div className={styles['proj-box']}>
+                            <img src={construcIcon} alt="Recepie Book Icon" className={styles['img-proj']}/>
                         </div>
                         <div className={styles['proj-box']}>
-                            <img src={checkList} alt="Check-list Icon" className={styles['img-proj']}/>
+                            <img src={construcIcon} alt="Check-list Icon" className={styles['img-proj']}/>
                         </div>
                         {/*<div className={styles['proj-box1']}>
                             <img src={construcIcon} alt="Construction Icon" className={styles['img-proj']}/>
