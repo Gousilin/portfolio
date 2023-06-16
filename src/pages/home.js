@@ -79,7 +79,7 @@ const Home = () => {
                             1000
                           ]}
                           wrapper="span"
-                          speed={1000}
+                          speed={150}
                           style={{ fontSize: '1em', whiteSpace: 'pre-line', display: 'block'}}
                           repeat={false}
                     
